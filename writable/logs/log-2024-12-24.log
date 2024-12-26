@@ -1,0 +1,127 @@
+WARNING - 2024-12-24 12:29:32 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-24 12:29:36 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-24 11:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-12-24 12:29:38 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-24 11:29:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-12-24 12:29:39 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-24 11:29:39 --> ParseError: syntax error, unexpected token "{"
+[Method: GET, Route: auth/admin]
+in APPPATH\Controllers\AuthController.php on line 13.
+ 1 FCPATH\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\composer/../../app/Controllers/AuthController.php')
+ 2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers\\AuthController')
+ 3 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\AuthController', true)
+ 4 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-24 12:30:20 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-24 11:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-12-24 12:30:21 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-24 12:30:21 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-24 12:30:32 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-24 11:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-12-24 12:30:32 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-24 11:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-12-24 12:30:32 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-24 12:30:33 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-24 12:30:35 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-24 11:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-12-24 12:30:35 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-24 12:30:36 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-24 12:30:36 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-24 11:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-12-24 12:30:40 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-12-24 11:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2024-12-24 12:30:40 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2024-12-24 12:30:41 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
