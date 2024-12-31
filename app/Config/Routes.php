@@ -24,8 +24,35 @@ $routes->group("admin", ['namespace' => 'App\Controllers\Admin', 'filter' => 'ad
         });
     });
 
+    $routes->group('post', function ($routes) {
+        $routes->get('list', 'PostController::index', ['as' => 'posts.list']);
+        $routes->get('add_page', 'PostController::addPage', ['as' => 'posts.add.page']);
+
+        $routes->group('ajax', static function ($routes) {
+            $routes->post('check_slug', 'PostController::checkSlugAPI', ['as' => 'ajax.post.slug']);
+            $routes->post('fetch_data_table', 'PostController::apiDataTable', ['as' => 'ajax.post.list']);
+            $routes->post('delete', 'PostController::deleteAPI', ['as' => 'ajax.delete.post']);
+        });
+    });
+
+    $routes->group('tags', function ($routes) {
+
+        $routes->group('ajax', static function ($routes) {
+            //
+
+            $routes->match(['get', 'post'],'fetch_tags', 'TagsController::fetchTags', ['as' => 'api.fetch_tags']);
+            $routes->post('add_tags', 'TagsController::addTag', ['as' => 'api.add_tags']);
+        });
+    });
+
     $routes->group('media', function ($routes) {
         $routes->get('/', 'MediaController::index', ['as' => 'media.home']);
+
+        $routes->group('api', static function ($routes) {
+            $routes->post('upload', 'MediaController::upload', ['as' => 'media.post.upload']);
+            $routes->delete('revert', 'MediaController::revert', ['as' => 'media.post.revert']);
+
+        });
     });
 });
 

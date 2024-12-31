@@ -15,9 +15,6 @@ class FileManager
 
     public function build()
     {
-        return FlmngrServer::flmngrRequest(array(
-            "dirFiles" => FCPATH . "/uploads/" . $this->name,
-        ));
     }
 }
 

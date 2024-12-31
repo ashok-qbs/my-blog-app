@@ -291,12 +291,12 @@ if (!function_exists('renderCategoryOptions')) {
     function renderCategoryOptions($selected = '')
     {
         $categoryModel = new CategoryModel();
-        $data = $categoryModel->select('category_name, category_id')->findAll();
+        $data = $categoryModel->select('name, id')->findAll();
         ob_start();
         $response = "<option value=''>Select Category</option>";
         foreach ($data as $category) {
-            $categoryId = $category['category_id'];
-            $categoryName = $category['category_name'];
+            $categoryId = $category['id'];
+            $categoryName = $category['name'];
 
             $isSelected = $categoryId == $selected ? 'selected' : '';
 

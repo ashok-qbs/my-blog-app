@@ -15,6 +15,8 @@ return array(
     'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
     'Masterminds\\' => array($vendorDir . '/masterminds/html5/src'),
     'Laminas\\Escaper\\' => array($vendorDir . '/laminas/laminas-escaper/src'),
+    'Intervention\\Image\\' => array($vendorDir . '/intervention/image/src'),
+    'Intervention\\Gif\\' => array($vendorDir . '/intervention/gif/src'),
     'FontLib\\' => array($vendorDir . '/dompdf/php-font-lib/src/FontLib'),
     'Faker\\' => array($vendorDir . '/fakerphp/faker/src/Faker'),
     'Dompdf\\' => array($vendorDir . '/dompdf/dompdf/src'),

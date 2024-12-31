@@ -81,7 +81,7 @@
                             <div class="col-lg-6 px-4">
                                 <div class="form-group">
                                     <label class="form-label" for="category_name">Category Title</label>
-                                    <input type="text" name="category_name" class="form-control" id="category_name"
+                                    <input type="text" name="category_name" class="form-control " id="category_name"
                                         required>
                                 </div>
                             </div>

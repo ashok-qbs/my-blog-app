@@ -43,6 +43,11 @@
     <!-- myMessage -->
     <link rel="stylesheet" href="<?= b_assets('vendor/mymessage/css/jquery.my-message.1.1.min.css') ?>">
 
+    <!-- select 2 -->
+    <link rel="stylesheet" href="<?= b_assets('vendor/select2/css/select2.css') ?>">
+    <link rel="stylesheet" href="<?= b_assets('vendor/select2/css/bootstrap.css') ?>">
+    <script src="<?= b_assets('vendor/select2/js/select2.full.js') ?>"></script>
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
@@ -146,8 +151,8 @@
                         </a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="">
+                    <li class="nav-item" id="post">
+                        <a class="nav-link" aria-current="page" href="<?= url_to('posts.list') ?>">
                             <i class="fa-solid fa-signs-post icon"></i>
                             <span class="item-name">Posts</span>
                         </a>
@@ -161,7 +166,7 @@
                     </li>
 
                     <li class="nav-item" id="media">
-                        <a class="nav-link" aria-current="page" href="<?= url_to('media.home')?>">
+                        <a class="nav-link" aria-current="page" href="<?= url_to('media.home') ?>">
                             <i class="fa-solid fa-photo-film icon"></i>
                             <span class="item-name">Media</span>
                         </a>
@@ -825,6 +830,9 @@
                         window.location.reload();
                     }, 2000);
                 }
+
+
+                const select2 = $(".select2").select2({theme: "bootstrap-5"});
             });
         </script>
 
