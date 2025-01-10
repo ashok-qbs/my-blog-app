@@ -772,17 +772,6 @@
 
                 pageNav.addClass('active');
 
-                var myMessage = new MyMessage.message({
-                    iconFontSize: "16px",
-                    messageFontSize: "20px",
-                    showTime: 4000,
-                    align: "center",
-                    positions: {
-                        top: "50%",
-                        right: "1px",
-                    },
-                });
-
                 <?php if (session()->getFlashdata('message')):
                     sleep(0.5); ?>
                     myMessage.add("<?= session()->getFlashdata('message') ?>", "<?= session()->getFlashdata('type') ?? 'normal' ?>");

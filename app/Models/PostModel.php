@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use App\Models\PostTagModel;
 
 class PostModel extends Model
 {
@@ -32,4 +33,12 @@ class PostModel extends Model
     protected $dateFormat = 'datetime';
     protected $createdField = 'created_at';
     protected $updatedField = 'updated_at';
+
+
+    public function insertTag($batchData)
+    {
+        $post_tag_model = new PostTagModel();
+
+        return $post_tag_model->insertBatch($batchData);
+    }
 }

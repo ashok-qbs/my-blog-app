@@ -34,6 +34,51 @@ class PostController extends BaseController
         return view(ADMIN_VIEW, $data);
     }
 
+    public function addNewPost()
+    {
+        if ($this->request->getPost()) {
+
+            // var_dump($this->request->getPost('tags'));
+            // exit;
+
+            $postData['title'] = $this->request->getPost('title');
+            $postData['slug'] = $this->request->getPost('post_slug');
+            $postData['category_id'] = $this->request->getPost('category');
+            $postData['content'] = $this->request->getPost('content');
+            $postData['summary'] = $this->request->getPost('summary');
+            $postData['status'] = $this->request->getPost('status');
+            $postData['meta_description'] = $this->request->getPost('meta_description');
+            $postData['meta_keywords'] = $this->request->getPost('meta_keywords');
+
+            $postData['created_by'] = getCurrentAdmin();
+
+            if ($this->postsModel->save($postData)) {
+
+                $postID = $this->postsModel->insertID();
+                $tags = explode(",", $this->request->getPost('tags'));
+
+                $tagData = [];
+
+                foreach ($tags as $tag) {
+                    $tag = trim($tag);
+                    $tagData[] = [
+                        'post_id' => $postID,
+                        'tag' => $tag
+                    ];
+                }
+                $this->postsModel->insertTag($tagData);
+                setFlashData('success', 'Post Added Successfully');
+            } else {
+                setFlashData('error', 'Failed to Add Post');
+            }
+
+        } else {
+            setFlashData('error', 'Invalid Request');
+        }
+
+        return $this->response->redirect(url_to('posts.list'));
+    }
+
     public function editPage($ref)
     {
         $ref = udecode($ref);
@@ -83,5 +128,5 @@ class PostController extends BaseController
     }
 
 
-    
+
 }

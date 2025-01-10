@@ -1,0 +1,38 @@
+WARNING - 2025-01-09 14:56:42 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-09 13:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2025-01-09 14:56:42 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-09 14:56:43 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-09 14:56:48 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-01-09 13:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+WARNING - 2025-01-09 14:56:48 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-01-09 14:56:50 --> [DEPRECATED] Optional parameter $type declared before required parameter $message is implicitly treated as a required parameter in APPPATH\Helpers\admin_helper.php on line 66.
+ 1 SYSTEMPATH\Common.php(640): include_once('C:\\Users\\QBS AK\\Desktop\\xampp\\htdocs\\my-blog-app\\vendor\\codeigniter4\\framework\\system\\Debug\\Exceptions.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(487): helper([...])
+ 3 SYSTEMPATH\Boot.php(249): CodeIgniter\Autoloader\Autoloader->loadHelpers()
+ 4 SYSTEMPATH\Boot.php(64): CodeIgniter\Boot::autoloadHelpers()
+ 5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
