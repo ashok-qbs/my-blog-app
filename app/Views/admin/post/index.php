@@ -37,10 +37,10 @@
             processing: true, // Shows loading message
             serverSide: true, // Enables server-side processing
             ajax: {
-                url: "<?= url_to('ajax.category.list') ?>",
+                url: "<?= url_to('ajax.post.list') ?>",
                 type: "POST",
             }, columns: [
-                { data: 'name', title: 'Name' },
+                { data: 'title', title: 'Name' },
                 { data: 'category', title: 'Category' },
                 { data: 'created_by', title: 'Created By' },
                 { data: 'created_at', title: 'Created At' },

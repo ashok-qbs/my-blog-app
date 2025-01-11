@@ -1,4 +1,5 @@
-<?//= phpinfo(); ?>
+<? //= phpinfo(); 
+?>
 
 <?= view(ADMIN_URL . "/includes/lib_ckeditor") ?>
 
@@ -69,8 +70,6 @@
                                     </div>
                                     <div class="editor_container__word-count" id="editor-word-count"></div>
                                 </div>
-
-                                <textarea name="content" id="content"></textarea>
                             </div>
                         </div>
 
@@ -80,22 +79,22 @@
 
                         <div class="col-lg-12 py-3 px-3">
                             <div class="form-group">
-                                <label class="form-label" for="summery">Summery</label>
-                                <textarea name="summery" id="summery" class="summernote form-control"></textarea>
+                                <label class="form-label" for="summary">Summery</label>
+                                <textarea name="summary" id="summary" class="summernote form-control"></textarea>
                             </div>
                         </div>
 
                         <div class="col-lg-6 px-3">
                             <div class="form-group">
                                 <label class="form-label" for="keywords">Meta Keywords</label>
-                                <input type="text" name="keywords" class="form-control" id="keywords" required>
+                                <input type="text" name="meta_keywords" class="form-control" id="keywords" required>
                             </div>
                         </div>
 
                         <div class="col-lg-6 px-3">
                             <div class="form-group">
                                 <label class="form-label" for="keywords">Meta Description</label>
-                                <input type="text" name="decs" class="form-control" id="decs" required>
+                                <input type="text" name="meta_description" class="form-control" id="decs" required>
                             </div>
                         </div>
 
@@ -181,46 +180,37 @@
 </div>
 
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
 
-        const myMessage = new MyMessage.message({
-            iconFontSize: "16px",
-            messageFontSize: "20px",
-            showTime: 4000,
-            align: "center",
-            positions: {
-                top: "50%",
-                right: "1px",
-            },
-        });
+
 
         const postTitle = $('#title');
         const postSlug = $('#post_slug');
 
-        postTitle.on('keyup', function () {
+        postTitle.on('keyup', function() {
             let slugValue = $(this).val();
-            checkSlug(slugValue).then(function (response) {
+            checkSlug(slugValue).then(function(response) {
                 postSlug.val(response.final_slug);
                 if (response.status == true) {
                     postSlug.removeClass('is-invalid').addClass('is-valid');
                 } else {
                     postSlug.addClass('is-invalid');
                 }
-            }).catch(function (error) {
+            }).catch(function(error) {
                 console.error("Error:", error);
             });
         });
 
-        postSlug.on('change', function () {
+        postSlug.on('change', function() {
             let slugValue = $(this).val();
-            checkSlug(slugValue).then(function (response) {
+            checkSlug(slugValue).then(function(response) {
                 postSlug.val(response.final_slug);
                 if (response.status == true) {
                     postSlug.removeClass('is-invalid').addClass('is-valid');
                 } else {
                     postSlug.addClass('is-invalid');
                 }
-            }).catch(function (error) {
+            }).catch(function(error) {
                 console.error("Error:", error);
             });
         });
@@ -230,11 +220,13 @@
                 $.ajax({
                     url: "<?= url_to('ajax.post.slug') ?>",
                     method: 'POST',
-                    data: { slug: slug },
-                    success: function (response) {
+                    data: {
+                        slug: slug
+                    },
+                    success: function(response) {
                         resolve(response);
                     },
-                    error: function (xhr, status, error) {
+                    error: function(xhr, status, error) {
                         reject(error);
                     },
                 });
@@ -248,27 +240,32 @@
             url: "<?= url_to('media.post.upload.temp') ?>", // Set the url for your upload script
             acceptedFiles: "image/*",
             addRemoveLinks: true,
-            success: function (file, response) {
+            success: function(file, response) {
                 console.log(response);
                 $('#imageEditor').modal('show');
                 // Initialize Filerobot Image Editor
                 var config = {
-                    source: response.file_url,  // Use the image URL from PHP response
-                    onSave: function (editedImageObject, designState) {
+                    source: response.file_url, // Use the image URL from PHP response
+                    onSave: function(editedImageObject, designState) {
                         console.log('saved', editedImageObject, designState);
                         console.log('editedImageObject', editedImageObject);
                         // Handle the edited image after user finishes editing
                         uploadEditedImage(editedImageObject);
                     },
-                    onClose: function (closingReason) {
+                    onClose: function(closingReason) {
                         console.log('Closing reason', closingReason);
                         $('#imageEditor').modal('hide');
                     },
                     annotationsCommon: {
                         fill: '#ff0000',
                     },
-                    Text: { text: 'Filerobot...' },
-                    Rotate: { angle: 90, componentType: 'slider' },
+                    Text: {
+                        text: 'Filerobot...'
+                    },
+                    Rotate: {
+                        angle: 90,
+                        componentType: 'slider'
+                    },
                     translations: {
                         profile: 'Profile',
                         coverPhoto: 'Cover photo',
@@ -278,8 +275,7 @@
                         fbCoverPhotoSize: '820x312px',
                     },
                     Crop: {
-                        presetsItems: [
-                            {
+                        presetsItems: [{
                                 titleKey: 'classicTv',
                                 descriptionKey: '4:3',
                                 ratio: 4 / 3,
@@ -290,30 +286,25 @@
                                 ratio: 21 / 9,
                             },
                         ],
-                        presetsFolders: [
-                            {
-                                titleKey: 'socialMedia',
-                                groups: [
+                        presetsFolders: [{
+                            titleKey: 'socialMedia',
+                            groups: [{
+                                titleKey: 'facebook',
+                                items: [{
+                                        titleKey: 'profile',
+                                        width: 180,
+                                        height: 180,
+                                        descriptionKey: 'fbProfileSize',
+                                    },
                                     {
-                                        titleKey: 'facebook',
-                                        items: [
-                                            {
-                                                titleKey: 'profile',
-                                                width: 180,
-                                                height: 180,
-                                                descriptionKey: 'fbProfileSize',
-                                            },
-                                            {
-                                                titleKey: 'coverPhoto',
-                                                width: 820,
-                                                height: 312,
-                                                descriptionKey: 'fbCoverPhotoSize',
-                                            },
-                                        ],
+                                        titleKey: 'coverPhoto',
+                                        width: 820,
+                                        height: 312,
+                                        descriptionKey: 'fbCoverPhotoSize',
                                     },
                                 ],
-                            },
-                        ],
+                            }, ],
+                        }, ],
                     },
                     tabsIds: [FilerobotImageEditor.TABS.ADJUST, FilerobotImageEditor.TABS.ANNOTATE, FilerobotImageEditor.TABS.WATERMARK],
                     defaultTabId: FilerobotImageEditor.TABS.ANNOTATE,
@@ -326,23 +317,25 @@
                 );
 
                 filerobotImageEditor.render({
-                    onClose: function (closingReason) {
+                    onClose: function(closingReason) {
                         console.log('Closing reason', closingReason);
                         filerobotImageEditor.terminate();
                     },
                 });
             },
 
-            removedfile: function (file) {
+            removedfile: function(file) {
                 // Handle file removal
                 $.ajax({
                     url: "", // Endpoint to remove the file
                     method: 'POST',
-                    data: { file_name: file.name },
-                    success: function (response) {
+                    data: {
+                        file_name: file.name
+                    },
+                    success: function(response) {
                         console.log('File removed:', response);
                     },
-                    error: function (xhr, status, error) {
+                    error: function(xhr, status, error) {
                         console.error('Failed to remove file:', error);
                     },
                 });
@@ -361,7 +354,7 @@
                 data: formData,
                 processData: false,
                 contentType: false,
-                success: function (response) {
+                success: function(response) {
                     console.log(response);
 
                     if (response.status) {
@@ -369,7 +362,7 @@
                         $('#imageEditor').modal('hide');
                     }
                 },
-                error: function (xhr, status, error) {
+                error: function(xhr, status, error) {
                     console.error(error);
                 },
             });
@@ -383,7 +376,7 @@
                 ],
 
                 callbacks: {
-                    onKeyup: function (e) {
+                    onKeyup: function(e) {
                         const maxWords = wordLimit; // Set word limit here
                         const content = $(this).summernote('code'); // Get content from the editor
                         const text = $('<div>').html(content).text(); // Strip HTML tags
@@ -403,7 +396,7 @@
         }
 
 
-        $(document).on('submit', 'form', function (e) {
+        $(document).on('submit', 'form', function(e) {
 
             if ($(this).find('.is-invalid').length > 0) {
                 e.preventDefault();
@@ -419,10 +412,10 @@
             searchField: 'name',
             create: true, // Allow adding new tags
 
-            createFilter: function (input) {
+            createFilter: function(input) {
                 // Ensure no duplicates are allowed
                 var existingOptions = this.options || {};
-                return !Object.keys(existingOptions).some(function (key) {
+                return !Object.keys(existingOptions).some(function(key) {
                     return (
                         existingOptions[key] &&
                         existingOptions[key].text &&
@@ -431,21 +424,23 @@
                 });
             },
 
-            load: function (query, callback) {
+            load: function(query, callback) {
                 if (!query.length) return callback();
                 $.ajax({
                     url: '<?= url_to('api.fetch_tags') ?>', // API to fetch tags
                     type: 'GET',
-                    data: { q: query },
-                    error: function () {
+                    data: {
+                        q: query
+                    },
+                    error: function() {
                         callback();
                     },
-                    success: function (res) {
+                    success: function(res) {
                         callback(res.data); // Pass the data to Selectize
                     }
                 });
             },
-            onOptionAdd: function (value, data) {
+            onOptionAdd: function(value, data) {
                 // Save the new tag to the backend
 
                 if (data && data.id) {
@@ -457,13 +452,15 @@
                     url: '<?= url_to('api.add_tags') ?>', // Endpoint to save the new tag
                     type: 'POST',
                     contentType: 'application/json',
-                    data: JSON.stringify({ name: value }),
-                    success: function (response) {
+                    data: JSON.stringify({
+                        name: value
+                    }),
+                    success: function(response) {
                         // Optionally handle the server response
                         $('#tags').addClass('is-valid');
                         console.log('Tag added:', response);
                     },
-                    error: function () {
+                    error: function() {
                         console.error('Failed to save the new tag.');
                     }
                 });
@@ -474,7 +471,7 @@
 
         init_text_editor();
 
-        $(document).on('submit', '#postForm', function (e) {
+        $(document).on('submit', '#postForm', function(e) {
             e.preventDefault();
 
             var editorContent = window.editor.getData();
@@ -484,8 +481,17 @@
                 return false;
             }
 
-            // Submit the form with adding the content to the form data
-            $('#content').val(editorContent);
+            // Check if a hidden input already exists
+            let hiddenInput = this.querySelector('input[name="content"]');
+            if (!hiddenInput) {
+                hiddenInput = document.createElement('input');
+                hiddenInput.type = 'hidden';
+                hiddenInput.name = 'content';
+                this.appendChild(hiddenInput);
+            }
+
+            // Update the hidden input value with editor content
+            hiddenInput.value = editorContent;
 
             this.submit();
         });

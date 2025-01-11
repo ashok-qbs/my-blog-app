@@ -29,6 +29,8 @@ $routes->group("admin", ['namespace' => 'App\Controllers\Admin', 'filter' => 'ad
         $routes->get('add_page', 'PostController::addPage', ['as' => 'posts.add.page']);
         $routes->post('add', 'PostController::addNewPost', ['as' => 'posts.add']);
 
+        $routes->get('edit_page/(:any)', 'PostController::editPage/$1', ['as' => 'posts.edit.page']);
+
         $routes->group('ajax', static function ($routes) {
             $routes->post('check_slug', 'PostController::checkSlugAPI', ['as' => 'ajax.post.slug']);
             $routes->post('fetch_data_table', 'PostController::apiDataTable', ['as' => 'ajax.post.list']);

@@ -312,10 +312,10 @@ if (!function_exists('getCategoryNameById')) {
     function getCategoryNameById($categoryId)
     {
         $categoryModel = new CategoryModel();
-        $data = $categoryModel->select('category_name')->where('category_id', $categoryId)->first();
+        $data = $categoryModel->select('name')->where('id', $categoryId)->first();
 
         if ($data) {
-            return $data['category_name'];
+            return $data['name'];
         } else {
             return '--';
         }

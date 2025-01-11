@@ -764,13 +764,24 @@
 
         <!-- AK SCRIPT -->
         <script>
-            $(document).ready(function () {
+            $(document).ready(function() {
 
                 var pageId = "<?= $pageId ?>";
 
                 const pageNav = $('#' + pageId).find('a');
 
                 pageNav.addClass('active');
+
+                const myMessage = new MyMessage.message({
+                    iconFontSize: "16px",
+                    messageFontSize: "20px",
+                    showTime: 4000,
+                    align: "center",
+                    positions: {
+                        top: "50%",
+                        right: "1px",
+                    },
+                });
 
                 <?php if (session()->getFlashdata('message')):
                     sleep(0.5); ?>
@@ -780,7 +791,7 @@
                 const doDelete = $('#doDelete');
                 const deleteLoader = $('#deleteLoader')
 
-                $(document).on('click', '[data-bs-target="#confirmDelete"]', function () {
+                $(document).on('click', '[data-bs-target="#confirmDelete"]', function() {
                     var dataRef = $(this).data('ref');
                     var dataURL = $(this).data('url');
 
@@ -788,7 +799,7 @@
                     doDelete.data('url', dataURL);
                 });
 
-                doDelete.on('click', function (e) {
+                doDelete.on('click', function(e) {
                     var dataRef = $(this).data('ref');
                     var dataURL = $(this).data('url');
 
@@ -803,10 +814,13 @@
                     $.ajax({
                         url: dataURL,
                         method: 'POST',
-                        data: { ref: dataRef },
-                        success: function (response) {
+                        data: {
+                            ref: dataRef
+                        },
+                        success: function(response) {
                             reloadPage();
-                        }, error: function (xhr, status, error) {
+                        },
+                        error: function(xhr, status, error) {
                             myMessage.add(error, 'error');
                             reloadPage();
                         }
@@ -814,14 +828,16 @@
                 });
 
                 function reloadPage() {
-                    setTimeout(function () {
+                    setTimeout(function() {
                         console.log('Reloading ....');
                         window.location.reload();
                     }, 2000);
                 }
 
 
-                const select2 = $(".select2").select2({theme: "bootstrap-5"});
+                const select2 = $(".select2").select2({
+                    theme: "bootstrap-5"
+                });
             });
         </script>
 
